@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/logo.svg'
+import rightmove from '../img/social/rightmoveDark.svg'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -41,7 +42,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Poplar Farm" style={{ width: '88px' }} />
+              <h1 style={{fontWeight: '900'}}>Poplar Farm</h1>
             </Link>
             {/* Hamburger menu */}
             <div
@@ -65,6 +66,13 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/blog">
                 Blog
               </Link>
+              <a className="navbar-item" title="rightmove" target="_new" href="https://www.rightmove.co.uk/property-for-sale/property-90919028.html">
+                 <img
+                  src={rightmove}
+                  alt="View Poplar Farm on rightmove"
+                  style={{width: "7em"}}
+                />
+              </a>
             </div>
           </div>
         </div>
