@@ -11,6 +11,12 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: cliftonc
+    api_key: 665389953415351
+
 collections:
   - name: "blog"
     label: "Blog"
