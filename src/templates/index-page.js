@@ -61,7 +61,7 @@ export const IndexPageTemplate = ({
                   </div>
                 </div>
                 <div className="columns">
-                  <div className="column is-12">
+                  <div className="column is-4">
                     <h2><a style={{
                         boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
                         backgroundColor: '#f40',
@@ -69,6 +69,26 @@ export const IndexPageTemplate = ({
                         lineHeight: '2',
                         padding: '0.25em'
                       }} href={intro.link.url}>{intro.link.description}</a>
+                    </h2>
+                  </div>
+                  <div className="column is-4">
+                    <h2><a style={{
+                        boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+                        backgroundColor: '#f40',
+                        color: 'white',
+                        lineHeight: '2',
+                        padding: '0.25em'
+                      }} href='https://www.rightmove.co.uk/property-for-sale/property-90919028.html'>View on Rightmove</a>
+                    </h2>
+                  </div>
+                  <div className="column is-4">
+                    <h2><a style={{
+                        boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+                        backgroundColor: '#f40',
+                        color: 'white',
+                        lineHeight: '2',
+                        padding: '0.25em'
+                      }} href='https://www.facebook.com/Poplar-Farm-110114787434936/'>Questions on Facebook</a>
                     </h2>
                   </div>
                 </div>
