@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Poplar Farm
-image: /img/img_20160629_094023.jpg
+image: /img/main.jpg
 heading: Escape to the country
 subheading: Escape to the country
 description: Escape to the country
