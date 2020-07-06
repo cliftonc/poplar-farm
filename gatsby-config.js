@@ -2,9 +2,9 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Poplar Farm - Ashford, Kent - For Sale',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Have you ever considered life in the country, but with an easy commute to London?  A small farm with a lot of history, and a separate 2-bed annex for parents or kids!',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
