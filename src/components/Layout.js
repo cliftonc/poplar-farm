@@ -12,16 +12,12 @@ const TemplateWrapper = ({ children }) => {
     <div>
       <Helmet>
         <html lang="en" />
-        <title>{title}</title>
+        <title>Poplar Farm - Kent</title>
         <meta name="description" content={description} />
         <meta name="theme-color" content="#fff" />
-        <meta property="og:type" content="business.business" />
+        <meta property="og:type" content="realestate" />
         <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
-        <meta
-          property="og:image"
-          content={`${withPrefix('/')}img/og-image.jpg`}
-        />
+        <meta property="og:url" content="https://poplar.farm" />
       </Helmet>
       <Navbar />
       <div>{children}</div>

@@ -60,12 +60,6 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
               <a className="navbar-item" title="rightmove" target="_new" href="https://www.rightmove.co.uk/property-for-sale/property-90919028.html">
                  <img
                   src={rightmove}

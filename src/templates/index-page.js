@@ -4,7 +4,6 @@ import { Link, graphql } from 'gatsby'
 
 import ImageGallery from "../components/ImageGallery"
 import Layout from '../components/Layout'
-import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
   image,
@@ -12,6 +11,7 @@ export const IndexPageTemplate = ({
   heading,
   subheading,
   description,
+  intro,
 }) => (
   <div>
     <div
@@ -46,18 +46,6 @@ export const IndexPageTemplate = ({
         >
           {title}
         </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-            backgroundColor: '#f40',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subheading}
-        </h3>
       </div>
     </div>
     <section className="section section--gradient">
@@ -71,21 +59,19 @@ export const IndexPageTemplate = ({
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
-                    <p>{description}</p>
+                    <p>{intro.description}</p>
                   </div>
                 </div>
-                <div className="column is-12">
-                    <ImageGallery/>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
+                <div className="columns">
+                  <div className="column is-12">
+                    <h2><a style={{
+                        boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+                        backgroundColor: '#f40',
+                        color: 'white',
+                        lineHeight: '2',
+                        padding: '0.25em'
+                      }} href={intro.link.url}>{intro.link.description}</a>
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -103,6 +89,7 @@ IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   description: PropTypes.string,
+  intro: PropTypes.object,
 }
 
 const IndexPage = ({ data }) => {
@@ -151,6 +138,10 @@ export const pageQuery = graphql`
         intro {
           heading
           description
+          link {
+            description
+            url
+          }
         }
       }
     }
